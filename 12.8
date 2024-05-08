@@ -1,0 +1,13 @@
+while True:
+    parts = input().split()
+    name = parts[0]
+    
+    if name == '-1':
+        break
+    
+    try:
+        age = int(parts[1]) + 1
+    except ValueError:
+        age = 0  # Set age to 0 if it's not an integer
+    
+    print(f'{name} {age}')
